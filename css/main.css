@@ -1,0 +1,166 @@
+/* Colors
+	BG:         #080F5B | Dark Blue
+	BG-a:       #0D19A3 | Less Dark Blue
+	Highlights: #15DB95 | Lime Green
+	Content:    #F4E4C1 | Light Gold
+	Content-a:  #E4C580 | Gold
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+	font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+.header {
+	width: 100%;
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_text.asp */
+.header-container { 
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.header-container h1 {
+	color:#15DB95;
+	font-size: 500%;
+}
+
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Navbar */
+.navbar {
+	background-color: #080F5B;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.stuck {
+	padding-top: 112px;
+}
+
+.navbar-brand,
+.nav-link {
+	color: #E4C580 !important;
+}
+
+.form-control {
+	background-color: #0D19A3;
+	border-color: #080F5B;
+}
+
+.form-control:focus {
+	background-color: #F4E4C1;
+	border-color: #080F5B;
+}
+
+.btn-outline-success {
+	background-color: #080F5B;
+	color: #15DB95;
+	border-color: #15DB95;
+	border-width: 2px;
+}
+
+.btn-outline-success:hover {
+	background-color: #15DB95;
+	color: #080F5B;
+	border-color: #15DB95;
+}
+
+.dropdown-menu {
+	background-color: #F4E4C1;
+}
+
+.dropdown-item {
+	color: #080F5B;
+}
+
+.dropdown-item:hover {
+	background-color: #15DB95!important;
+}
+
+/* Main content */
+main {
+	background-color: #0D19A3;
+	padding: 56px 0;
+}
+.container {
+	background-color: #0D19A3;
+}
+/* Jumbotron */
+.jumbotron {
+	background-color: #F4E4C1;
+	color: #080F5B;
+}
+
+.jumbotron .lower {
+	text-align: center;
+}
+
+.jumbotron .lower .btn {
+	font-size: 120%;
+	margin: 0 5%;
+	background-color: #0D19A3;
+	color: #E4C580
+}
+
+.jumbotron .lower .btn:hover {
+	color: #0D19A3;
+	background-color: #15DB95;
+}
+
+.description {
+	color: #E4C580;
+}
+.description a {
+	color: #15DB95;
+}
+
+.languages {
+	padding: 10px;
+	border-radius: 5px 5px;
+	background-color: #15DB95;
+	color: #080F5B;
+}
+
+.languages a {
+	color: #080F5B;
+}
+/* Footer */
+footer {
+	background-color: #080F5B;
+}
+
+footer .container {
+	padding: 2%;
+	background-color: #080F5B;
+	color: #F4E4C1;
+}
+
+
+/* Modal */
+.modal-header {
+	background-color: #0D19A3;
+	color: #F4E4C1;
+}
+.modal-body, .modal-footer {
+	color: #F4E4C1;
+	background-color: #080F5B;
+}
+
+/* Misc functions */
+

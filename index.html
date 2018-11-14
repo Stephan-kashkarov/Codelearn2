@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Compute</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!-- Top content -->
+	<div class="header-container">
+		<img class="header" src="images/Untitled.png" alt="Header">
+		<h1 class="centered">Compute</h1>
+	</div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<a class="navbar-brand" href="#">Compute</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle"
+						href="#" id="navbarDropdown"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						Questions
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="">Python</a>
+						<a class="dropdown-item disabled" href="#">JavaScript</a>
+						<a class="dropdown-item disabled" href="#">C++</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<!-- Main content -->
+	<main>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="display-4">Hello, world!</h1>
+				<p class="lead">
+					Welcome to Compute, here we will teach you some essental skills to move forward in computing.
+					 Starting with the basics is our ground breaking strategy to get you on your feet and help you
+					start running
+				</p>
+				<hr class="my-4">
+				<div class="lower">
+					<p>Pick a course to learn about and get started or scroll down and read more about the site</p>
+					<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">C++</button>
+					<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">Python</button>
+					<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">JavaScript</button>
+				</div>
+			</div>
+			<div class="description">
+				<h3>
+					What is a programming language?
+				</h3>
+				<p>
+					According to Wikipedia a programming language is:
+					formal language,
+					which comprises a set of instructions
+					used to produce various kinds of output.
+					Programming languages are used to create programs
+					that implement specific algorithms
+					<br>
+					<br>
+					Most programming languages consist of instructions for computers,
+					although there are programmable machines that use a 
+					limited set of specific instructions, rather than the general 
+					programming languages of modern computers. Early ones
+					preceded the invention of the digital computer, the first 
+					probably being the automatic flute player described in the
+					9th century by the brothers Musa in Baghdad, during the Islamic 
+					Golden Age.[1] From the early 1800s, programs were used
+					to direct the behavior of machines such as Jacquard looms, 
+					music boxes and player pianos.[2] However, their programs
+					(such as a player piano's scrolls) could not produce different 
+					behavior in response to some input or condition.
+					<br>
+					<br>
+					Thousands of different programming languages have been created, 
+					mainly in the computer field, and many more still are
+					being created every year. Many programming languages require 
+					computation to be specified in an imperative form (i.e.,
+					as a sequence of operations to perform) while other languages 
+					use other forms of program specification such as the
+					declarative form (i.e. the desired result is specified, 
+					not how to achieve it).
+					<br>
+					<br>
+					The description of a programming language is usually split 
+					into the two components of syntax (form) and semantics
+					(meaning). Some languages are defined by a specification 
+					document (for example, the C programming language is specified
+					by an ISO Standard) while other languages (such as Perl) have 
+					a dominant implementation that is treated as a reference.
+					Some languages have both, with the basic language defined by 
+					a standard and extensions taken from the dominant
+					implementation being common.
+					<br>
+					<br>
+					<br>
+					Source:
+					<a href="https://en.wikipedia.org/wiki/Programming_language">https://en.wikipedia.org/wiki/Programming_language</a>
+				</p>
+			</div>
+			<div class="languages">
+				<h3>
+					Why learn how to code?
+				</h3>
+				<p>
+					Perhaps the most prevalent is to prepare youth for jobs. 
+					This is the argument that code.org uses, it’s the argument
+					Obama used, framing it as “skill necessary for economic 
+					opportunity and social mobility,” and its the argument that
+					state policy makers continue to use to justify funding 
+					for CS teacher training, certification, and hiring. It works
+					politically, because jobs-related arguments mobilize policy makers, 
+					because the public likes jobs (at least the
+					abstract idea of their children having them). Of course, 
+					it’s an argument fraught with problems. There may be a
+					shortage of software developers now, but will that shortage 
+					last long enough for a 5th grader to capitalize on it in 12
+					years? Who knows. Is one CS class in high school enough to 
+					get a job? No. Is learning to code enough to get a job? That
+					depends on what it means to “know how to code,” which is 
+					itself, an ill-defined idea that researchers like myself are
+					only beginning to understand.
+					<br>
+					<br>
+					A related argument is that people should learn to code to get 
+					a job. This argument actually makes sense: if you want to
+					develop software for a living, you should definitely learn to code. 
+					The organizations that use this one the most are
+					companies like coding bootcamps and online coding tutorials. 
+					They make the sensible case that companies are looking for
+					people with software development skills, and learning to code 
+					is one way to acquire these skills. As I noted above (and
+					as we found in a soon to be published study), “coding” skills 
+					aren’t really enough to get a job, but they are a start.
+					<br>
+					<br>
+					Another common argument is that coding is a literacy that 
+					is essential for understanding our increasingly computational
+					world. David Rushkoff made this argument in his book Program 
+					or be Programmed, suggesting that to be an informed
+					citizen, it is critical to understand how software, and transitively, 
+					software designers, can manipulate our behavior,
+					violate our privacy, and infringe upon our rights. The CSForAll 
+					consortium, which emerged from Obama’s call, makes a
+					similar argument, seeking to empower youth to “be creators in the 
+					digital economy, not just consumers, and to be active
+					citizens in our technology-driven world.” Professor Amy 
+					Bruckman made a related argument, suggesting that citizens need
+					insight into how software is developed so they can expect 
+					and enforce professional ethics in the development of
+					software; without this knowledge, people can find themselves 
+					with no ability to maintain or plan to maintain the
+					software that others build for them. As someone who studies 
+					how people understand software, I actually find all of
+					these arguments quite persuasive, but I don’t find them to 
+					be a convincing argument for learning to code. Knowledge
+					about how companies design, test, support, and maintain 
+					software is different from knowledge of how use programming
+					languages, APIs, technology stacks, and tools.
+					<br>
+					<br>
+					Source:
+					<a href="https://medium.com/bits-and-behavior/why-learn-to-code-113810a89491">https://medium.com/bits-and-behavior/why-learn-to-code-113810a89491</a>
+				</p>
+			</div>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm content">
+					<h4>More</h4>
+					<small>
+						Stephan Kashkarov, The developer of this site (me) 
+						is a college student from the city of Canberra
+						He is currently participating in the IT program 
+						at Gungahlin college and the Discovering Engeneering
+						Extention Program at the Australian National University.
+						 He intends to go onto University for CompSci or
+						Software Engeneering upon the completion 
+						of Yr 12 at Gungahlin College
+					</small>
+				</div>
+				<div class="col-sm">
+					
+				</div>
+				<div class="col-sm">
+					<h4>Socials</h4>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm socals">
+								<a href="https://github.com/Stephan-kashkarov">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+								</a>
+							</div>
+							<div class="col-sm socals">
+								<a href="https://stackoverflow.com/users/8352971/%D0%A1%D1%82%D1%91%D0%BF%D0%B0-%D0%9A%D0%B0%D1%88%D0%BA%D0%B0%D1%80%D0%BE%D0%B2">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg" />
+								</a>
+							</div>
+							<div class="col-sm socals">
+								<a href="#">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" />
+								</a>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm socals">
+								<a href="https://www.instagram.com/stephan_kashkarov/">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" />
+								</a>
+							</div>
+							<div class="col-sm socals">
+								<a href="https://www.facebook.com/profile.php?id=100007295955782">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg" />
+								</a>
+							</div>
+							<div class="col-sm socals">
+								<a href="https://twitter.com/stephankash">
+									<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitter.svg" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Hey, Slow down!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						To use this site you need to regester first.
+						We dont charge anything for our services don't worry.
+						we are just keeping track of your progress for you.
+					</p>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Username</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Remeber me</label>
+					</div>
+					<small>
+						If you dont have an account click register below
+					</small>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn" data-dismiss="modal">Back</button>
+					<button type="button" class="btn">Regester</button>
+					<button type="button" class="btn">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
