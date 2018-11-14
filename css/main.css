@@ -151,16 +151,31 @@ footer .container {
 	color: #F4E4C1;
 }
 
+footer a {
+	color: #F4E4C1;
+}
 
 /* Modal */
-.modal-header {
+.modal-header,
+.modal-footer {
 	background-color: #0D19A3;
 	color: #F4E4C1;
 }
-.modal-body, .modal-footer {
+.modal-body{
 	color: #F4E4C1;
 	background-color: #080F5B;
 }
 
+.modal .btn {
+	background-color: #0D19A3;
+	border-color: #15DB95;
+	color: #15DB95;
+	border-width: 2px;
+}
+
+.modal .btn:hover {
+	background-color: #15DB95;
+	color: #0D19A3;
+}
 /* Misc functions */
 
