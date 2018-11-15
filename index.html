@@ -23,6 +23,7 @@
 			crossorigin="anonymous"></script>
 		<!-- Custom JS -->
 		<script src="js/main.js"></script>
+		<script src="js/form.js"></script>
 	</head>
 	<body>
 		<!-- Top content -->
@@ -49,8 +50,8 @@
 						Learning
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-						<a class="dropdown-item" href="views/learning/python.html">Python</a>
-						<a class="dropdown-item" href="views/learning/cpp.html">C++</a>
+						<a class="dropdown-item modal-trigger" data-toggle="modal" data-target="#loginModal" href="views/learning/python.html">Python</a>
+						<a class="dropdown-item modal-trigger" data-toggle="modal" data-target="#loginModal" href="views/learning/cpp.html">C++</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -59,8 +60,8 @@
 						Quizes
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-						<a class="dropdown-item" href="views/quizzes/python.html">Python</a>
-						<a class="dropdown-item" href="views/quizzes/cpp.html">C++</a>
+						<a class="dropdown-item modal-trigger" data-toggle="modal" data-target="#loginModal" href="views/quizzes/python.html">Python</a>
+						<a class="dropdown-item modal-trigger" data-toggle="modal" data-target="#loginModal" href="views/quizzes/cpp.html">C++</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -86,8 +87,8 @@
 					<hr class="my-4">
 					<div class="lower">
 						<p>Pick a course to learn about and get started or scroll down and read more about the site</p>
-						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">C++</button>
-						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">Python</button>
+						<button type="button" class="btn modal-trigger" data-toggle="modal" data-target="#loginModal">C++</button>
+						<button type="button" class="btn modal-trigger" data-toggle="modal" data-target="#loginModal">Python</button>
 					</div>
 				</div>
 			</div>
@@ -266,12 +267,11 @@
 			</div>
 		</footer>
 		<!-- Modal -->
-		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-		aria-hidden="true">
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalCenterTitle">Hey, Slow down!</h5>
+						<h5 class="modal-title" id="ModalCenterTitle">Hey, Slow down!</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -283,16 +283,12 @@
 							we are just keeping track of your progress for you.
 						</p>
 						<div class="form-group">
-							<label for="exampleInputEmail1">Username</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+							<label for="InputEmail">Username</label>
+							<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Username">
 						</div>
 						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</div>
-						<div class="form-group form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Remeber me</label>
+							<label for="InputPassword">Password</label>
+							<input type="password" class="form-control" id="InputPassword" placeholder="Password">
 						</div>
 						<small>
 							If you dont have an account click register below
@@ -300,8 +296,76 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn exit" data-dismiss="modal">Back</button>
-						<button type="button" class="btn register">Regester</button>
+						<button type="button" class="btn register" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Regester</button>
 						<button type="button" class="btn login">Login</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Register modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="ModalCenterTitle">Your new? Welcome!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							Hi Welcome to Compute. We are excited to welcome you.
+							please write down a username and a password and we will 
+							give you your very own account 
+							(tip: only one user on the system at a time)
+						</p>
+						<form>
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-group">
+								<label for="username">Username</label>
+								<input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter Username">
+								<small id="emailHelp" class="form-text text-muted">Username must be 5 or more characters and letters only</small>
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone number</label>
+								<input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label class="mr-sm-2 sr-only" for="gender">Gender</label>
+								<select class="custom-select mr-sm-2" id="gender">
+									<option selected>Choose...</option>
+									<option value="M">Male</option>
+									<option value="F">Female</option>	
+									<option value="O">Other</option>
+								</select>
+							</div>
+							<p>Terms of service</p>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="TOS" value="tos">
+								<label class="form-check-label" for="TOS">I agree to the Terms of service</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="newsletter" value="newsletter">
+								<label class="form-check-label" for="newsletter">I wish to subscribe to the newsletter</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="both" value="both">
+								<label class="form-check-label" for="both">Both</label>
+							</div>
+							
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn exit" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Back</button>
+						<button type="button" class="btn create">Create Account</button>
 					</div>
 				</div>
 			</div>

@@ -68,6 +68,5 @@ $(function(){
 			$('form input').removeClass("animated shake")
 			alert("Search not implemented")
 		})
-
 	})
 })

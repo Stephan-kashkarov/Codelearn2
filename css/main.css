@@ -223,5 +223,5 @@ footer a {
 /* Misc functions */
 .highlighted {
 	background-color: #15DB95;
-	color: #0D19A3;
+	color: #0D19A3 !important;
 }
