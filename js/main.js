@@ -37,9 +37,7 @@ $(function(){
 	}).on('click', function (e) {
 		// Whole navbar
 		e.preventDefault();
-		console.log("HELLO");
-		console.log($('.navbar').css("background-color"));
-		if ($('.navbar').css("background-color") == "rgb(8, 15, 91)") {
+		if ($('.navbar').css("background-color") == "rgb(7, 13, 76)") {
 			$('.navbar').animate({
 				backgroundColor: "#15DB95"
 			})
@@ -48,7 +46,7 @@ $(function(){
 			})
 		} else {
 			$('.navbar').animate({
-				backgroundColor: "#080F5B"
+				backgroundColor: "#070D4C"
 			})
 			$('.navbar-brand, .nav-link').animate({
 				color: '#E4C580'
@@ -56,7 +54,7 @@ $(function(){
 		}
 	})
 
-	/* Search bar animation */
+	/* Search bar */
 	$('form .btn').on('click', function (e) {
 		e.preventDefault();
 		$('form input').addClass("animated shake").one(animationEnd, function () {

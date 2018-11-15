@@ -14,7 +14,7 @@
 }
 
 /* Header */
-.header {
+img {
 	width: 100%;
 }
 
@@ -40,7 +40,7 @@
 
 /* Navbar */
 .navbar {
-	background-color: #080F5B;
+	background-color: #070E54;
 	padding: 0;
 }
 
@@ -140,8 +140,33 @@ main {
 	background-color: #15DB95;
 }
 
+/* found on https://www.w3schools.com/howto/howto_css_parallax.asp */
+.parallax-html {
+	
+	background-image: url("../images/website.png");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-python {
+
+	background-image: url("../images/python.png");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text {
+	background-color: #F4E4C1;
+}
+
 .description {
-	color: #E4C580;
+	color: #080F5B;
 }
 .description a {
 	color: #15DB95;
@@ -150,7 +175,7 @@ main {
 .languages {
 	padding: 10px;
 	border-radius: 5px 5px;
-	background-color: #15DB95;
+	
 	color: #080F5B;
 }
 
