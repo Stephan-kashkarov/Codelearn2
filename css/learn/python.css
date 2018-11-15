@@ -1,0 +1,65 @@
+/* Colors
+	BG:         #080F5B | Dark Blue
+	BG-a:       #0D19A3 | Less Dark Blue
+	Highlights: #15DB95 | Lime Green
+	Content:    #F4E4C1 | Light Gold
+	Content-a:  #E4C580 | Gold
+*/
+.gradient {
+	background-image: linear-gradient(#070E54, #0D19A3)
+}
+
+main .container {
+	background-color: transparent;
+}
+
+.quote {
+	padding: 40% 0;
+	text-align: center;
+	color: #15DB95;
+	background-color: transparent;
+}
+
+.intro, .intro a {
+	color: #F4E4C1;
+	background-color: transparent;
+}
+
+.hello {
+	color: #F4E4C1;
+}
+
+code {
+	color: #15DB95;
+}
+
+.slideshow {
+	text-align: center;
+	background-image: url("../../images/flask.png");
+	height: 700px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.slideshow-arrow{
+	font-size: 600%;
+	background-color: transparent;
+	border-color: transparent;
+	color: #E4C580;
+	margin-top: 250px;
+}
+
+.slideshow-arrow:hover {
+	color: #0D19A3;
+}
+
+.arrow-right {
+	margin-left: 40%;
+}
+
+.arrow-left {
+	margin-right: 40%;
+}
