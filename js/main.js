@@ -57,7 +57,14 @@ $(function(){
 	/* Search bar */
 	$('form .btn').on('click', function (e) {
 		e.preventDefault();
-		$('form input').addClass("animated shake").one(animationEnd, function () {
+
+		$('form input').animate({
+			backgroundColor: 'red'
+		}, 500).addClass(
+			"animated shake"
+		).animate({
+			backgroundColor: '#0D19A3'
+		}, 500).one(animationEnd, function () {
 			$('form input').removeClass("animated shake")
 			alert("Search not implemented")
 		})

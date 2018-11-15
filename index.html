@@ -32,38 +32,47 @@
 		</div>
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark ">
-			<a class="navbar-brand" href="">Compute</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<a class="navbar-brand" href="">Compute</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-							Questions
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/views/python.html">Python</a>
-							<a class="dropdown-item disabled" href="/views/js.html">JavaScript</a>
-							<a class="dropdown-item disabled" href="/views/cpp.html">C++</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			</div>
-		</nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Learning
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="views/learning/python.html">Python</a>
+						<a class="dropdown-item" href="views/learning/cpp.html">C++</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Quizes
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="views/quizzes/python.html">Python</a>
+						<a class="dropdown-item" href="views/quizzes/cpp.html">C++</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
 		<!-- Main content -->
 		<main>
 			<div class="container">
@@ -79,7 +88,6 @@
 						<p>Pick a course to learn about and get started or scroll down and read more about the site</p>
 						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">C++</button>
 						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">Python</button>
-						<button type="button" class="btn" data-toggle="modal" data-target="#loginModal">JavaScript</button>
 					</div>
 				</div>
 			</div>

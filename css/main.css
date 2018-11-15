@@ -23,7 +23,7 @@ img {
 	position: relative;
 	text-align: center;
 	width: 100%;
-}
+}	
 
 .header-container h1 {
 	color:#15DB95;
@@ -219,6 +219,7 @@ footer a {
 	background-color: #15DB95;
 	color: #0D19A3;
 }
+
 /* Misc functions */
 .highlighted {
 	background-color: #15DB95;
