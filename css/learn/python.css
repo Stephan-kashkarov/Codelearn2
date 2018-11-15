@@ -5,6 +5,7 @@
 	Content:    #F4E4C1 | Light Gold
 	Content-a:  #E4C580 | Gold
 */
+/* Gradient */
 .gradient {
 	background-image: linear-gradient(#070E54, #0D19A3)
 }
@@ -13,12 +14,15 @@ main .container {
 	background-color: transparent;
 }
 
+/* Quote text */
 .quote {
 	padding: 40% 0;
 	text-align: center;
 	color: #15DB95;
 	background-color: transparent;
 }
+
+/* Introduction */
 
 .intro, .intro a {
 	color: #F4E4C1;
@@ -32,6 +36,8 @@ main .container {
 code {
 	color: #15DB95;
 }
+
+/* Parallax */
 
 .slideshow {
 	text-align: center;
@@ -62,4 +68,41 @@ code {
 
 .arrow-left {
 	margin-right: 40%;
+}
+
+/* Cards */
+
+.card {
+	background-color: #F4E4C1;
+	border-color: #070E54;	
+	border-width: 1px;
+	z-index: 0;
+}
+
+.card-header {
+	background-color: #0D19A3;
+	color: #F4E4C1;
+	border-color: #070E54;
+}
+
+.active {
+	background-color: #F4E4C1 !important;
+	color: #0D19A3 !important;
+}
+
+
+.nav-link {
+	border-radius: 0 0 !important;
+	border-width: 0 !important;
+}
+
+.nav-link:hover {
+	background-color: #0D19A3;
+	color: #15DB95 !important;
+
+}
+
+/* misc */
+.hidden {
+	display: none;
 }
