@@ -41,6 +41,7 @@
 /* Navbar */
 .navbar {
 	background-color: #080F5B;
+	padding: 0;
 }
 
 .sticky {
@@ -55,7 +56,23 @@
 
 .navbar-brand,
 .nav-link {
-	color: #E4C580 !important;
+	color: #E4C580;
+	padding: 10px;
+	height: 100%;
+}
+
+.nav-item:hover,
+.nav-link:focus {
+	background-color: #F4E4C1;
+}
+
+.nav-item:hover .nav-link,
+.nav-link:focus {
+	color: #0D19A3;
+}
+
+form {
+	padding: 0 10px;
 }
 
 .form-control {
@@ -90,7 +107,7 @@
 }
 
 .dropdown-item:hover {
-	background-color: #15DB95!important;
+	background-color: #15DB95 !important;
 }
 
 /* Main content */
@@ -178,4 +195,7 @@ footer a {
 	color: #0D19A3;
 }
 /* Misc functions */
-
+.highlighted {
+	background-color: #15DB95;
+	color: #0D19A3;
+}
