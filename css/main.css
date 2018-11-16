@@ -226,3 +226,10 @@ footer a {
 	background-color: #15DB95;
 	color: #0D19A3 !important;
 }
+
+/* for code */
+pre {
+	background-color: #444;
+	color: #15DB95;
+	padding: 0 2%;
+}

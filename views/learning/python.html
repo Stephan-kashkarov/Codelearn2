@@ -136,18 +136,138 @@
 				<div class="card-body">
 					<div class="var current">
 						<h5 class="card-title">Variables</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<!-- source: https://www.tutorialspoint.com/python/python_variable_types.htm -->
+						<p class="card-text">
+							Variables are nothing but reserved memory locations to store values. This means that when you
+							create a variable you reserve some space in memory.
+							Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved
+							memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in
+							these variables.
+						</p>
+						<div class="card-text body">
+						Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when
+						you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+
+						The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is
+						the value stored in the variable. For example −
+						<pre>
+<code>
+#!/usr/bin/python3
+
+counter = 100 # An integer assignment
+miles = 1000.0 # A floating point
+name = "John" # A string
+
+print(counter)
+print(miles)
+print(name)</code>
+						</pre>
+						Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively.
+						This produces the following result −
+						<pre>
+<code>
+100
+1000.0
+John</code>
+						</pre>
+						</div>
 						<a href="#" class="btn btn-primary first-tab">Next</a>
 					</div>
 					<div class="cond hidden">
 						<h5 class="card-title">Conditional Statments</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<div class="card-text body">
+							<!-- Source: https://www.tutorialspoint.com/python/python_if_else.htm -->
+							An else statement can be combined with an if statement. An else statement contains the block of code that executes if
+							the conditional expression in the if statement resolves to 0 or a FALSE value.
+							The else statement is an optional statement and there could be at most only one else statement following if.
+							<h6>Syntax</h6>
+							The syntax of the if...else statement is −
+
+							<pre>
+<code>if expression:
+	statement(s)
+else:
+	statement(s)</code>
+							</pre>
+							There is also a type of statment called elif. <br><br>
+							The elif statement allows you to check multiple expressions for TRUE and execute a block of code as soon as one of the
+							conditions evaluates to TRUE.
+
+							Similar to the else, the elif statement is optional. However, unlike else, for which there can be at most one
+							statement, there can be an arbitrary number of elif statements following an if.
+							<h6>
+								Syntax
+							</h6>
+							<pre>
+<code>
+if expression1:
+	statement(s)
+elif expression2:
+	statement(s)
+elif expression3:
+	statement(s)
+else:
+	statement(s)</code>
+							</pre>
+						</div>
 						<a href="#" class="btn btn-primary second-tab back">Prev</a>
 						<a href="#" class="btn btn-primary second-tab forward">Next</a>
 					</div>
 					<div class="loop hidden">
+						<!-- Content below was found on https://www.tutorialspoint.com/python/python_for_loop.htm and https://www.tutorialspoint.com/python/python_loops.htm -->
 						<h5 class="card-title">Loops</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<p class="card-text">
+							In general, statements are executed sequentially: The first statement 
+							in a function is executed first, followed by the second, and so on. There may be a 
+							situation when you need to execute a block of code several number of times. Programming 
+							languages provide various control structures that allow for more complicated execution 
+							paths. A loop statement allows us to execute a statement or group of statements multiple times.
+						</p>
+						<div class="card-text body">
+							<!-- <h4>Types</h4> -->
+							There are is two of types of loops in Python. These include:
+							<ul>
+								<li>For loops</li>
+								<li>While loops</li>
+							</ul>
+							<h5>While loops</h5>
+							Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the
+							loop body.
+							<h6>Syntax</h6>
+							The syntax of a while loop in Python programming language is −
+							
+							<pre>
+<code>
+while expression:
+	statement(s)</code>
+							</pre>
+							Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is
+							any non-zero value. The loop iterates while the condition is true.
+
+							When the condition becomes false, program control passes to the line immediately following the loop.
+							
+							In Python, all the statements indented by the same number of character spaces after a programming construct are
+							considered to be part of a single block of code. Python uses indentation as its method of grouping statements.
+							<br>
+							<br>
+							<h5>For loops</h5>
+							Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+							A while loop statement in Python programming language repeatedly executes a target statement as long as a given
+							condition is true.
+							It has the ability to iterate over the items of any sequence, such as a list or a string.
+							
+							<h6>Syntax</h6>
+							<pre>
+<code>
+for iterating_var in sequence:
+	statements(s)</code>
+							</pre>
+							
+							If a sequence contains an expression list, it is evaluated first. Then, the first item in the sequence is assigned to
+							the iterating variable iterating_var. Next, the statements block is executed. Each item in the list is assigned to
+							iterating_var, and the statement(s) block is executed until the entire sequence is exhausted.
+							
+						</div>
 						<a href="#" class="btn btn-primary third-tab back">Prev</a>
 						<a href="#" class="btn btn-primary third-tab quiz">Quiz</a>
 					</div>

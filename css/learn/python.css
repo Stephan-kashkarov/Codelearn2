@@ -84,12 +84,19 @@ code {
 	color: #F4E4C1;
 	border-color: #070E54;
 }
+.card-text {
+	text-align: left;
+}
 
+.body {
+	text-align: left;
+}
+
+/* Tabs */
 .active {
 	background-color: #F4E4C1 !important;
 	color: #0D19A3 !important;
 }
-
 
 .nav-link {
 	border-radius: 0 0 !important;
