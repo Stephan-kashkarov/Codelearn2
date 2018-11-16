@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../../css/main.css">
-	<link rel="stylesheet" href="../../css/python.css">
+	<link rel="stylesheet" href="../../css/learn.css">
 	<!-- JS Libs -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
@@ -20,7 +20,7 @@
 	 crossorigin="anonymous"></script>
 	<!-- Custom JS -->
 	<script src="../../js/main.js"></script>
-	<script src="../../js/python.js"></script>
+	<script src="../../js/learn.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="../../index.html">Home</a>
 				</li>
 				<li class="nav-item dropdown">
@@ -67,6 +67,298 @@
 			</form>
 		</div>
 	</nav>
+<main class="gradient">
+	<div class="container">
+		<div class="quote">
+			<div class="quotetxt">
+				<h1>
+					"Writing in C or C++ is like running a chain saw<br>
+					 with all the safety guards removed."</h1>
+				<span> ~ Bob Gray, 1998</span><br>
+			</div>
+			<div class="spacer"></div>
+		</div>
+		<div class="intro">
+			<h2>What is C++?</h2>
+			<p>
+				C++ is a general-purpose object-oriented programming (OOP) language, developed by Bjarne Stroustrup, and is an
+				extension of the C language. It is therefore possible to code C++ in a "C style" or "object-oriented style." In certain
+				scenarios, it can be coded in either way and is thus an effective example of a hybrid language.
+
+				C++ is considered to be an intermediate-level language, as it encapsulates both high- and low-level language features.
+				Initially, the language was called "C with classes" as it had all the properties of the C language with an additional
+				concept of "classes." However, it was renamed C++ in 1983.
+
+				It is pronounced "see-plus-plus."
+
+				<br>
+				<br>
+				Source: <a href="https://www.techopedia.com/definition/26184/c-programming-language">https://www.techopedia.com/definition/26184/c-programming-language</a>
+			</p>
+		</div>
+	</div>
+</main>
+<div class="slideshow-C">
+</div>
+<main>
+	<div class="container">
+		<div class="hello">
+			<h3>Learning</h3>
+			<p>
+				Traditionally, the first program you write when learning a new
+				programming language is Hello, World! So let's write it in C++ now!
+				<!-- This paragraph from https://groklearning.com/learn/intro-python-1/intro-to-programming/0/ -->
+				<br>
+				<br>
+				<!-- Source: https://www.learn-cpp.org/en/Hello%2C_World%21 -->
+				Every C++ program uses libraries, which give the ability to execute necessary functions. For example, the most basic
+				function called 'cout', which prints to the screen, is defined in the iostream header file.
+
+				To add the ability to run the cout command to our program, we must add following include directive to our first line of
+				the code:
+				<pre>
+<code>
+#include &lt;iostream&gt;
+using namespace std;</code>
+				</pre>
+				The second part of the code is the actual code which we are going to write. The first code which will run will always
+				reside in the main function.
+				<pre>
+<code>
+int main() {
+	cout &lt;&lt; "Hello, World!";
+}</code>
+				</pre>
+				The int keyword indicates that the function main will return an integer - a simple number. The number which will be
+				returned by the function indicates whether the program that we wrote worked correctly. If we want to say that our code
+				was run successfully, we will return the number 0. A number greater than 0 will mean that the program that we wrote
+				failed.
+
+				For this tutorial, we will return 0 to indicate that our program was successful:
+				<pre>
+<code>
+return 0;</code>
+				</pre>
+			</p>
+		</div>
+		<div class="card text-center">
+			<div class="card-header">
+				<h3>Core concepts</h3>
+				<ul class="nav nav-tabs card-header-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Variables</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Conditional</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Loops</a>
+					</li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<div class="var current">
+					<h5 class="card-title">Variables</h5>
+					<!-- source: https://www.tutorialspoint.com/cplusplus/cpp_variable_types.htm -->
+					<p class="card-text">
+						A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific type,
+						which determines the size and layout of the variable's memory; the range of values that can be stored within that
+						memory; and the set of operations that can be applied to the variable.
+
+						The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a
+						letter or an underscore. Upper and lowercase letters are distinct because C++ is case-sensitive −
+					</p>
+					<div class="card-text body">
+						A variable declaration provides assurance to the compiler that there is one variable existing with the given type and
+						name so that compiler proceed for further compilation without needing complete detail about the variable. A variable
+						declaration has its meaning at the time of compilation only, compiler needs actual variable definition at the time of
+						linking of the program.
+
+						A variable declaration is useful when you are using multiple files and you define your variable in one of the files
+						which will be available at the time of linking of the program. You will use extern keyword to declare a variable at any
+						place. Though you can declare a variable multiple times in your C++ program, but it can be defined only once in a file,
+						a function or a block of code.
+
+						Example
+						Try the following example where a variable has been declared at the top, but it has been defined inside the main
+						function −
+						<pre>
+<code>
+#include &lt;iostream&gt;
+using namespace std;
+
+// Variable declaration:
+extern int a, b;
+extern int c;
+extern float f;
+
+int main () {
+	// Variable definition:
+	int a, b;
+	int c;
+	float f;
+
+	// actual initialization
+	a = 10;
+	b = 20;
+	c = a + b;
+
+	cout << c << endl;
+	f=70.0/3.0; 
+	cout << f << endl;
+	return 0;
+}</code>
+						</pre>
+	
+						When the above code is compiled and executed, it
+						produces the following result − 
+						<pre>
+<code>
+30
+23.3333</code>
+						</pre> 
+					</div>
+					<a href="#" class="btn btn-primary first-tab">Next</a>
+				</div>
+				<div class="cond hidden">
+					<h5 class="card-title">Conditional Statments</h5>
+					<div class="card-text body">
+						<!-- Source: https://www.tutorialspoint.com/cplusplus/cpp_if_else_statement.htm -->
+						An if statement can be followed by an optional else statement, which executes when the boolean expression is false.
+						<h6>Syntax</h6>
+						The syntax of an if...else statement in C++ is −
+						<pre>
+<code>
+if(boolean_expression) {
+// statement(s) will execute if the boolean expression is true
+} else {
+// statement(s) will execute if the boolean expression is false
+}</code>
+						</pre>
+						If the boolean expression evaluates to true, then the if block of code will be executed, otherwise else block of code
+						will be executed.
+						<br><br>
+						An if statement can be followed by an optional else if...else statement, which is very usefull to test various
+						conditions using single if...else if statement.
+						When using if , else if , else statements there are few points to keep in mind.
+						<ol>
+							<li>
+								An if can have zero or one else's and it must come after any else if's.
+							</li>
+							<li>
+								An if can have zero to many else if's and they must come before the else.
+							</li>
+							<li>
+Once an else if succeeds, none of he remaining else if's or else's will be tested.
+							</li>
+						</ol>
+						<h6>Syntax</h6>
+						The syntax of an if...else if...else statement in C++ is −
+						<pre>
+<code>
+if(boolean_expression 1) {
+	// Executes when the boolean expression 1 is true
+} else if( boolean_expression 2) {
+	// Executes when the boolean expression 2 is true
+} else if( boolean_expression 3) {
+	// Executes when the boolean expression 3 is true
+} else {
+	// executes when the none of the above condition is true.
+}</code>
+						</pre>
+					</div>
+					<a href="#" class="btn btn-primary second-tab back">Prev</a>
+					<a href="#" class="btn btn-primary second-tab forward">Next</a>
+				</div>
+				<div class="loop hidden">
+					<!-- Content below was found on https://www.tutorialspoint.com/python/python_for_loop.htm and https://www.tutorialspoint.com/python/python_loops.htm -->
+					<h5 class="card-title">Loops</h5>
+					<p class="card-text">
+						In general, statements are executed sequentially: The first statement
+						in a function is executed first, followed by the second, and so on. There may be a
+						situation when you need to execute a block of code several number of times. Programming
+						languages provide various control structures that allow for more complicated execution
+						paths. A loop statement allows us to execute a statement or group of statements multiple times.
+					</p>
+					<div class="card-text body">
+						<h4>Types</h4>
+						There are is three of types of loops in C++. These include:
+						<ul>
+							<li>For loops</li>
+							<li>While loops</li>
+							<li>Do while loops (not covered here)</li>
+						</ul>
+						<h5>While loops</h5>
+						<!-- source: https://www.tutorialspoint.com/cplusplus/cpp_while_loop.htm -->
+						A while loop statement repeatedly executes a target statement as long as a given condition is true.
+
+						<h6>Syntax</h6>
+						The syntax of a while loop in C++ is −
+						<pre>
+<code>
+while(condition) {
+	statement(s);
+}</code>
+						</pre>
+						Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is
+						any non-zero value. The loop iterates while the condition is true.
+						When the condition becomes false, program control passes to the line immediately following the loop.
+						<br>
+						<br>
+						<h5>For loops</h5>
+						<!-- source: https://www.tutorialspoint.com/cplusplus/cpp_for_loop.htm -->
+						A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a
+						specific number of times.
+
+						<h6>Syntax</h6>
+						The syntax of a for loop in C++ is −
+						<pre>
+<code>
+for ( init; condition; increment ) {
+	statement(s);
+}</code>
+						</pre>
+						Here is the flow of control in a for loop −
+						<ol>
+							<li>
+								The init step is executed first, and only once. This step allows you to declare and initialize any loop control
+								variables. You are not required to put a statement here, as long as a semicolon appears.
+							</li>
+							<br>
+							<li>
+								Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop
+								does not execute and flow of control jumps to the next statement just after the for loop.
+							</li>
+							<br>
+							<li>
+								Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop
+								does not execute and flow of control jumps to the next statement just after the for loop.
+							</li>
+							<br>
+							<li>
+								Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop
+								does not execute and flow of control jumps to the next statement just after the for loop.
+							</li>
+							<br>
+							<li>
+								After the body of the for loop executes, the flow of control jumps back up to the increment statement. This statement
+								can be left blank, as long as a semicolon appears after the condition.
+							</li>
+							<br>
+							<li>
+								The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop,
+								then increment step, and then again condition). After the condition becomes false, the for loop terminates..
+							</li>
+							<br>
+						</ol>
+					</div>
+					<a href="#" class="btn btn-primary third-tab back">Prev</a>
+					<a href="#" class="btn btn-primary third-tab quiz">Quiz</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 	<footer>
 		<div class="container">
 			<div class="row">

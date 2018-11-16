@@ -1,15 +1,15 @@
-$(function(){
+$(function () {
 	// Hides on start up
 	$('.quotetxt').hide()
 
 	// Waits 1.5 seconds before fading in
-	setTimeout( () => {
+	setTimeout(() => {
 		$(".quotetxt").fadeIn(600)
 	}, 1500)
 
 	// Slideshow arrows
-	$('.slideshow-arrow').on('click', function() {
-		if ($('.slideshow').css('background-image').includes("flask")){
+	$('.slideshow-arrow').on('click', function () {
+		if ($('.slideshow').css('background-image').includes("flask")) {
 			$(".slideshow").css("background-image", "url(../../images/pygame.png)")
 		} else {
 			$(".slideshow").css("background-image", "url(../../images/flask.png)")
@@ -39,7 +39,7 @@ $(function(){
 			case "Loops":
 				$(".loop").addClass('current').removeClass('hidden')
 				break;
-		
+
 			default:
 				break;
 		}
@@ -77,6 +77,6 @@ $(function(){
 			$(".cond").addClass('current').removeClass('hidden')
 		} else {
 			window.location = "../quizzes/python.html"
-		} 
+		}
 	})
 })

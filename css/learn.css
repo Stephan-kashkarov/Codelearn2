@@ -24,7 +24,8 @@ main .container {
 
 /* Introduction */
 
-.intro, .intro a {
+.intro,
+.intro a {
 	color: #F4E4C1;
 	background-color: transparent;
 }
@@ -41,7 +42,7 @@ code {
 
 .slideshow {
 	text-align: center;
-	background-image: url("../../images/flask.png");
+	background-image: url("../images/flask.png");
 	height: 700px;
 	background-attachment: fixed;
 	background-position: center;
@@ -49,8 +50,18 @@ code {
 	background-size: cover;
 	width: 100%;
 }
+.slideshow-C {
+	text-align: center;
+	background-image: url("../images/c++.png");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
 
-.slideshow-arrow{
+.slideshow-arrow {
 	font-size: 600%;
 	background-color: transparent;
 	border-color: transparent;
@@ -74,7 +85,7 @@ code {
 
 .card {
 	background-color: #F4E4C1;
-	border-color: #070E54;	
+	border-color: #070E54;
 	border-width: 1px;
 	z-index: 0;
 }
@@ -84,6 +95,7 @@ code {
 	color: #F4E4C1;
 	border-color: #070E54;
 }
+
 .card-text {
 	text-align: left;
 }
