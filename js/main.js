@@ -55,7 +55,7 @@ $(function(){
 	})
 
 	/* Search bar */
-	$('form .btn + btn-outline-success').on('click', function (e) {
+	$('form .btn + .btn-outline-success').on('click', function (e) {
 		e.preventDefault();
 
 		$('form input').animate({
