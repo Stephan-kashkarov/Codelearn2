@@ -7,8 +7,9 @@
 	<title>Compute</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS Libs -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="../../css/main.css">
@@ -16,8 +17,9 @@
 	<!-- JS Libs -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
 	<!-- Custom JS -->
 	<script src="../../js/main.js"></script>
 	<script src="../../js/quiz.js"></script>
@@ -67,6 +69,240 @@
 			</form>
 		</div>
 	</nav>
+	<main>
+		<div class="container">
+			<div class="card text-center">
+				<div class="card-header">
+					Test yourself!
+				</div>
+				<div class="card-body">
+					<div class="question part-0 ">
+						<h5 class="card-title">Are you ready to see if you have what it takes to code in Python?</h5>
+						<p class="card-text">Click below to find out</p>
+						<div>
+							<a href="#" class="btn btn-primary">Start</a>
+						</div>
+					</div>
+					<div class="question part-1">
+						<form>
+						<h5 class="card-title">Question 1</h5>
+						<p class="card-text">Which of the following is a variable in Python?</p>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-1-1" value="correct">
+							<label class="form-check-label" for="inlineRadio1">a = 3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-1-2" value="incorrect">
+							<label class="form-check-label" for="inlineRadio2">int a = 3;</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-1-3" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">var a = 3;</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-1-4" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">let a = 3</label>
+						</div>
+						<br>
+						<a href="#" class="btn btn-primary btn-prev">Prev</a>
+						<a href="#" class="btn btn-primary">Check</a>
+						<a href="#" class="btn btn-primary">Next</a>
+						</form>
+					</div>
+					<div class="question part-2">
+						<form>
+						<h5 class="card-title">What is the correct syntax for a for loop in Python?</h5>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-2-1" value="incorrect">
+							<label class="form-check-label" for="inlineRadio1">
+								<pre>
+<code>
+for (var i = 0; i < 3; ++i){
+	cond()
+}</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-2-2" value="incorrect">
+							<label class="form-check-label" for="inlineRadio2">
+								<pre>
+<code>
+for (var i in [1, 2, 3]){
+	cond();
+}</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-2-3" value="correct">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+for i in range(10):
+	cond()</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-2-4" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+for (int i = 0; i < 3; ++i){
+	cond()
+}</code>
+								</pre>
+							</label>
+						</div>
+						<br>
+						<a href="#" class="btn btn-primary btn-prev">Prev</a>
+						<a href="#" class="btn btn-primary">Check</a>
+						<a href="#" class="btn btn-primary">Next</a>
+						</form>
+					</div>
+					<div class="question part-3">
+						<form>
+						<h5 class="card-title">What is the correct syntax for a while loop in Python?</h5>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-3-1" value="incorrect">
+							<label class="form-check-label" for="inlineRadio1">
+								<pre>
+<code>
+while(true){
+	code()
+}</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-3-2" value="incorrect">
+							<label class="form-check-label" for="inlineRadio2">
+								<pre>
+<code>
+do{
+	code()
+}
+while(true)</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-3-3" value="correct">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+while True:
+	code()</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-3-4" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+for( ; ; ) {
+	code()
+}</code>
+								</pre>
+							</label>
+						</div>
+						<br>
+						<a href="#" class="btn btn-primary btn-prev">Prev</a>
+						<a href="#" class="btn btn-primary">Check</a>
+						<a href="#" class="btn btn-primary">Next</a>
+						</form>
+					</div>
+					<div class="question part-4">
+						<form>
+						<h5 class="card-title">What is the correct syntax for a if else statement in Python?</h5>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-4-1" value="incorrect">
+							<label class="form-check-label" for="inlineRadio1">
+								<pre>
+<code>
+if ( true ) {
+	code();
+} else {
+	code();
+}</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-4-2" value="correct">
+							<label class="form-check-label" for="inlineRadio2">
+								<pre>
+<code>
+if True:
+	code()
+else:
+	code()</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-4-3" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+switch(var){
+	case cond:
+		code();
+		break;
+
+	case cond:
+		code();
+		break;
+
+	default:
+		break;
+}</code>
+								</pre>
+							</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="q-4-4" value="incorrect">
+							<label class="form-check-label" for="inlineRadio3">
+								<pre>
+<code>
+if true:
+	code()
+else:
+	code()</code>
+	<!-- This one is wrong because true in python is True -->
+								</pre>
+							</label>
+						</div>
+						<br>	
+						<a href="#" class="btn btn-primary btn-prev">Prev</a>
+						<a href="#" class="btn btn-primary">Check</a>
+						<a href="#" class="btn btn-primary">Answers</a>
+						</form>
+					</div>
+					<div class="question answers part-5">
+						<h5>Answers</h5>
+						<div class="ans">
+
+						</div>
+						<a href="#" class="btn btn-primary btn-prev">Back</a>
+					</div>
+				</div>
+				<div class="card-footer text-muted">
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" 
+							role="progressbar" 
+							aria-valuenow="100" 
+							aria-valuemin="0" 
+							aria-valuemax="100" 
+							style="width: 0%">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -80,6 +316,10 @@
 				</div>
 				<div class="col-sm">
 					<h3>Thanks for visiting!</h3>
+					<br>
+					<div class="date">
+						Todays date: 
+					</div>
 				</div>
 				<div class="col-sm">
 					<h4>Socials</h4>

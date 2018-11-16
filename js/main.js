@@ -55,7 +55,7 @@ $(function(){
 	})
 
 	/* Search bar */
-	$('form .btn').on('click', function (e) {
+	$('form .btn + btn-outline-success').on('click', function (e) {
 		e.preventDefault();
 
 		$('form input').animate({
@@ -69,4 +69,6 @@ $(function(){
 			alert("Search not implemented")
 		})
 	})
+	var d = new Date();
+	$(".date").append(d);
 })

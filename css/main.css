@@ -198,6 +198,13 @@ footer a {
 	color: #F4E4C1;
 }
 
+.date {
+	border-radius: 10px 10px;
+	background-color: #15DB95;
+	color: #080F5B;
+	padding: 10px;
+}
+
 /* Modal */
 .modal-header,
 .modal-footer {
@@ -232,4 +239,5 @@ pre {
 	background-color: #444;
 	color: #15DB95;
 	padding: 0 2%;
+	text-align: left;
 }

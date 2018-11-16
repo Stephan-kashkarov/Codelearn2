@@ -1,0 +1,35 @@
+/* Colors
+	BG:         #080F5B | Dark Blue
+	BG-a:       #0D19A3 | Less Dark Blue
+	Highlights: #15DB95 | Lime Green
+	Content:    #F4E4C1 | Light Gold
+	Content-a:  #E4C580 | Gold
+*/
+
+main {
+	min-height: 100vh;
+}
+
+/* questions */
+.question-current {
+	display: block;
+}
+
+.question {
+	display: none;
+}
+
+/* Cards */
+
+.card {
+	background-color: #F4E4C1;
+	border-color: #070E54;
+	border-width: 1px;
+	z-index: 0;
+}
+
+.card-header {
+	background-color: #0D19A3;
+	color: #F4E4C1;
+	border-color: #070E54;
+}
